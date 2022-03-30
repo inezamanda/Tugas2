@@ -3,7 +3,7 @@ import ssl
 from bs4 import BeautifulSoup
 
 PORT = 443
-URL = "www.its.ac.id"
+URL = "classroom.its.ac.id"
 
 server_address = (URL, PORT)
 client_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
