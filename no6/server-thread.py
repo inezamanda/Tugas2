@@ -47,7 +47,6 @@ def handle_client(conn, addr):
         conn.sendall(response_header.encode('utf-8') + response_data.encode('utf-8'))
 
       elif (request_file == '/dataset' or request_file == 'dataset'):
-        print('WOKE!')
         response_data = '''
         <!DOCTYPE html>
         <html lang="en">
