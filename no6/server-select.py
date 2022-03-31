@@ -36,10 +36,8 @@ try:
             
             else:                
                 # receive data from client, break when null received          
-                data = sock.recv(4096)
-                # print(data)
-                
-                data = data.decode('utf-8')
+                data = sock.recv(4096).decode('utf-8')
+
                 request_header = data.split('\r\n')
 
                 request_file = request_header[0].split()[1]
@@ -69,7 +67,6 @@ try:
                         <meta name="viewport" content="width=device-width, initial-scale=1.0">
                     </head>
                     <body>
-                        <a href="/">&lt; Home</a>
                         <h1>
                             DATASET
                         <h1>
